@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagoda</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="loadPagoda()">
+
+<header>
+  <a href="index.html">← Back</a>
+  <button onclick="toggleDark()">Dark Mode</button>
+</header>
+
+<h2 id="title"></h2>
+
+<div class="tabs">
+  <button onclick="openTab('tab1')">History</button>
+  <button onclick="openTab('tab2')">Architecture</button>
+  <button onclick="openTab('tab3')">Best Time</button>
+  <button onclick="openTab('tab4')">Fun Fact</button>
+  <button onclick="openTab('tab5')">Gallery</button>
+</div>
+
+<div id="tab1" class="tab-content active"><p id="history"></p></div>
+<div id="tab2" class="tab-content"><p id="architecture"></p></div>
+<div id="tab3" class="tab-content"><p id="best"></p></div>
+<div id="tab4" class="tab-content"><p id="fact"></p></div>
+<div id="tab5" class="tab-content"><div id="gallery" class="gallery"></div></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

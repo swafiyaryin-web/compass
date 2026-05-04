@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bagan Compass</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="displayPagodas()">
+
+<header>
+  <h1>Bagan Compass</h1>
+  <nav>
+    <a href="planner.html">Trip Planner</a>
+    <a href="guide.html">Visitor Guide</a>
+    <a href="culture.html">Culture</a>
+    <button onclick="toggleDark()">Dark Mode</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Explore Ancient Bagan</h2>
+</section>
+
+<section id="pagodaList" class="card-container"></section>
+
+<div class="chatbox">
+  <input type="text" id="chatInput" placeholder="Ask Bagan Compass...">
+  <button onclick="sendMessage()">Send</button>
+  <p id="chatReply"></p>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

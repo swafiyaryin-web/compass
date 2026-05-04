@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trip Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html">Home</a>
+  <button onclick="toggleDark()">Dark Mode</button>
+</header>
+
+<h2>Plan Your Trip</h2>
+
+<select id="days">
+  <option value="1">1 Day</option>
+  <option value="2">2 Days</option>
+</select>
+
+<button onclick="generatePlan()">Generate</button>
+
+<div id="planResult"></div>
+
+<script src="js/data.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
